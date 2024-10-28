@@ -1,0 +1,88 @@
+/* styles.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Ensure the background gradient fills the entire viewport */
+.auth-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #a18cd1, #fbc2eb);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    color: #f00;
+    margin-bottom: 15px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .button {
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #a18cd1;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #8758c6;
+  }
+  
+  .signUp {
+    color: #666;
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .signUp:hover {
+    color: #444;
+  }
+  

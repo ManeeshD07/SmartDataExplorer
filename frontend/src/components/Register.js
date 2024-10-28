@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import '../styles/Login.css'
 
 function Register() {
   const [username, setUsername] = useState('');
@@ -29,30 +30,33 @@ function Register() {
   };
 
   return (
-    <div>
-      <h2>Register</h2>
-      {message && <p>{message}</p>}
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Username:</label>
+    <div className='auth-page'>
+      <div className="container">
+      <div className="card">
+        <h2 className="title">Register</h2>
+        {message && <p className="message">{message}</p>}
+        <form onSubmit={handleSubmit} className="form">
           <input
             type="text"
+            placeholder="email address"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
+            className="input"
           />
-        </div>
-        <div>
-          <label>Password:</label>
           <input
             type="password"
+            placeholder="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            className="input"
           />
-        </div>
-        <button type="submit">Register</button>
-      </form>
+          <button type="submit" className="button">Register</button>
+        </form>
+        <p className="signUp" onClick={() => navigate('/login')}>Back to Login</p>
+      </div>
+    </div>
     </div>
   );
 }
