@@ -19,7 +19,7 @@ CORS(app)
 jwt = JWTManager(app)
 
 # MongoDB Setup
-MONGO_URI = 'mongodb://localhost:27017/'  # Change if using MongoDB Atlas
+MONGO_URI = 'mongodb://localhost:27017/'
 client = MongoClient(MONGO_URI)
 db = client['HCI']
 users_collection = db['users']
