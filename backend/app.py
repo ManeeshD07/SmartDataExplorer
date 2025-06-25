@@ -15,7 +15,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Configuration
-app.config['JWT_SECRET_KEY'] = 'your_jwt_secret_key'  # Change this!
+# app.config['JWT_SECRET_KEY'] = ''
 jwt = JWTManager(app)
 
 # MongoDB Setup
